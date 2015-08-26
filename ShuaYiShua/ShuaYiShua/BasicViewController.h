@@ -12,6 +12,8 @@
 #import "NSDictionary+Additional.h"
 #import "NSString+Additional.h"
 #import "UIImage+Additional.h"
+#import "MacroDefinitions.h"
+#import "SingleObject.h"
 
 @interface BasicViewController : UIViewController
 

@@ -1,29 +1,25 @@
 //
-//  BasicViewController.m
-//  ShowMessage
+//  HomePageViewController.m
+//  ShuaYiShua
 //
-//  Created by Heguiting on 8/17/15.
-//  Copyright (c) 2015 Heguiting. All rights reserved.
+//  Created by Sywine on 8/25/15.
+//  Copyright (c) 2015 Sywine. All rights reserved.
 //
 
-#import "BasicViewController.h"
-#import "NSArray+Additional.h"
+#import "HomePageViewController.h"
+#import <iAd/iAd.h>
 
-@interface BasicViewController ()
+@interface HomePageViewController ()
 
 @end
 
-@implementation BasicViewController
+@implementation HomePageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    NSArray *arr = @[@"1",@"2",@"3"];
-//    NSString *str = [arr JSONString];
-//    NSLog(@"str=%@",str);
-//    
-//    
-//    
+    ADBannerView *bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 50, [UIScreen mainScreen].bounds.size.width, 50)];
+    [self.view addSubview:bannerView];
 }
 
 - (void)didReceiveMemoryWarning {

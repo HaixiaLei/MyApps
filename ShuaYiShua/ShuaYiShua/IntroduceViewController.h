@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IntroduceViewController.h
 //  ShuaYiShua
 //
 //  Created by Sywine on 8/25/15.
@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MacroDefinitions.h"
-#import "SingleObject.h"
 
-@interface ViewController : UIViewController
+@interface IntroduceViewController : UIViewController
 
-
+- (IBAction)go:(id)sender;
 @end
-
