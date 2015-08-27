@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SingleObject.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,29 @@
 
 @implementation AppDelegate
 
+void uncaughtExceptionHandler(NSException *exception) {
+    [SingleObject shared].isLastLaunchCrashed = YES;
+    NSMutableString *exceptionString = [NSMutableString stringWithFormat:@"\n!!! EXCEPTION !!!"];
+    [exceptionString appendFormat:@"\nname:%@",exception.name];
+    [exceptionString appendFormat:@"\nreason:%@",exception.reason];
+    [exceptionString appendFormat:@"\nuserInfo:%@",exception.userInfo];
+    [exceptionString appendFormat:@"\ncallStackReturnAddresses:%@",exception.callStackReturnAddresses];
+    [exceptionString appendFormat:@"\ncallStackSymbols:%@",exception.callStackSymbols];
+    [[SingleObject shared] logUserAction:exceptionString];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [SingleObject shared].isLastLaunchCrashed = NO;
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    NSLog(@"%@",[[SingleObject shared]userActions]);
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *stringDate = [dateFormatter stringFromDate:date];
+    stringDate = [NSString stringWithFormat:@"\n****** %@ ******",stringDate];
+    [[SingleObject shared]logUserAction:stringDate];
     return YES;
 }
 

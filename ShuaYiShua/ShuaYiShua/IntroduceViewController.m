@@ -8,6 +8,7 @@
 
 #import "IntroduceViewController.h"
 #import "HomePageViewController.h"
+#import "ViewController.h"
 
 @interface IntroduceViewController ()
 
@@ -17,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.view setBackgroundColor:[UIColor purpleColor]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,8 +31,28 @@
 }
 
 - (IBAction)go:(id)sender {
-    LOG(@"从介绍页面进入首页HomePageViewController");
+    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
     HomePageViewController *home = [[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
-    [self.navigationController pushViewController:home animated:YES];
+    
+    id obj = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if ([obj isKindOfClass:[ViewController class]]) {
+        ViewController *viewc = (ViewController *)obj;
+        viewc.homePageNavigationController = [[UINavigationController alloc]initWithRootViewController:home];
+        [self.view.superview addSubview:viewc.homePageNavigationController.view];
+    }
+    
+    
+    
+    //动画，让介绍页满满消失
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionFade;
+    [animation setDuration:0.4];
+    [animation setDelegate:self];
+    animation.removedOnCompletion = YES;
+    [self.view.superview.layer addAnimation:animation forKey:@"fade"];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    [self.view removeFromSuperview];//动画结束后，移除介绍页
 }
 @end

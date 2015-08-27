@@ -10,4 +10,7 @@
 
 @interface HomePageViewController : BasicViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *tttee;
+- (IBAction)sfdsfbbbbb:(id)sender;
+- (IBAction)sdfsdfsdf:(id)sender;
 @end

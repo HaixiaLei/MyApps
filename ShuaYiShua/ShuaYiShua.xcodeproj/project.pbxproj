@@ -32,6 +32,8 @@
 		956ACD651B8C62F40006AD48 /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */; };
 		957F84491B8D579E00C0A7A7 /* AppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F84481B8D579E00C0A7A7 /* AppRequest.m */; };
 		957F844D1B8D624800C0A7A7 /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F844C1B8D624800C0A7A7 /* AppClient.m */; };
+		959784B11B8EBFF200992114 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959784AF1B8EBFF200992114 /* LoginViewController.m */; };
+		959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959784B01B8EBFF200992114 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		957F84481B8D579E00C0A7A7 /* AppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRequest.m; sourceTree = "<group>"; };
 		957F844B1B8D624800C0A7A7 /* AppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppClient.h; sourceTree = "<group>"; };
 		957F844C1B8D624800C0A7A7 /* AppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppClient.m; sourceTree = "<group>"; };
+		959784AE1B8EBFF200992114 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		959784AF1B8EBFF200992114 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		959784B01B8EBFF200992114 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C2EDC97B2D8EAF189C4649A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,9 +212,10 @@
 				956ACD5C1B8C5EAD0006AD48 /* HomePageViewController.h */,
 				956ACD5D1B8C5EAD0006AD48 /* HomePageViewController.m */,
 				956ACD5E1B8C5EAD0006AD48 /* HomePageViewController.xib */,
-				956ACD611B8C62F40006AD48 /* IntroduceViewController.h */,
-				956ACD621B8C62F40006AD48 /* IntroduceViewController.m */,
-				956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */,
+				959784AE1B8EBFF200992114 /* LoginViewController.h */,
+				959784AF1B8EBFF200992114 /* LoginViewController.m */,
+				959784B01B8EBFF200992114 /* LoginViewController.xib */,
+				959784AA1B8EBFBD00992114 /* IntroducePage */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +280,16 @@
 				957F844C1B8D624800C0A7A7 /* AppClient.m */,
 			);
 			name = NetWork;
+			sourceTree = "<group>";
+		};
+		959784AA1B8EBFBD00992114 /* IntroducePage */ = {
+			isa = PBXGroup;
+			children = (
+				956ACD611B8C62F40006AD48 /* IntroduceViewController.h */,
+				956ACD621B8C62F40006AD48 /* IntroduceViewController.m */,
+				956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */,
+			);
+			name = IntroducePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */,
 				956ACD651B8C62F40006AD48 /* IntroduceViewController.xib in Resources */,
 				956ACCD21B8C2F920006AD48 /* Main.storyboard in Resources */,
 				956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */,
@@ -416,6 +433,7 @@
 				956ACD481B8C57EF0006AD48 /* NSDate+Translate.m in Sources */,
 				957F844D1B8D624800C0A7A7 /* AppClient.m in Sources */,
 				956ACD4C1B8C57EF0006AD48 /* UIImage+Additional.m in Sources */,
+				959784B11B8EBFF200992114 /* LoginViewController.m in Sources */,
 				956ACD491B8C57EF0006AD48 /* NSDictionary+Additional.m in Sources */,
 				956ACD501B8C57EF0006AD48 /* Utility.m in Sources */,
 				956ACD471B8C57EF0006AD48 /* NSArray+Additional.m in Sources */,

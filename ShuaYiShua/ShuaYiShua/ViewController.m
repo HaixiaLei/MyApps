@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HomePageViewController.h"
-#import "IntroduceViewController.h"
 
 #define VERSION_BUILD @"version_build"
 
@@ -20,19 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [SingleObject shared].isIntroduceForcedToShow = YES;//强制进入介绍页
 
     //判断version和build
     NSString *versionBuild_old = [[NSUserDefaults standardUserDefaults]objectForKey:VERSION_BUILD];
     NSString *versionBuild_now = [APP_VERSION stringByAppendingString:APP_BUILD];
     if ([versionBuild_now isEqualToString:versionBuild_old] && ![SingleObject shared].isIntroduceForcedToShow) {
-        LOG(@"进入首页HomePageViewController");
         HomePageViewController *homePage = [[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
-        [self.navigationController pushViewController:homePage animated:NO];
-        
+        self.homePageNavigationController = [[UINavigationController alloc]initWithRootViewController:homePage];
+        [self.view addSubview:self.homePageNavigationController.view];
     }else{
-        LOG(@"进入介绍页IntroduceViewController");
-        IntroduceViewController *introduce = [[IntroduceViewController alloc]initWithNibName:@"IntroduceViewController" bundle:nil];
-        [self.navigationController pushViewController:introduce animated:NO];
+        self.introduceViewController = [[IntroduceViewController alloc]initWithNibName:@"IntroduceViewController" bundle:nil];
+        [self.introduceViewController.view setFrame:self.view.bounds];
+        [self.view addSubview:self.introduceViewController.view];
         
         [[NSUserDefaults standardUserDefaults]setObject:versionBuild_now forKey:VERSION_BUILD];
         [[NSUserDefaults standardUserDefaults]synchronize];

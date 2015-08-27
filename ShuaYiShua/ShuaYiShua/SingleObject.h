@@ -13,5 +13,14 @@
 + (SingleObject *)shared;
 
 @property (nonatomic, assign) BOOL isIntroduceForcedToShow;
+@property (nonatomic, assign) BOOL isLogin;
+@property (nonatomic, assign) BOOL isLastLaunchCrashed;
+
+/**
+ *  记录和返回用户行为
+ */
+- (BOOL)logUserAction:(NSString *)action;
+- (NSString *)userActions;
+- (BOOL)emptyUserActions;
 
 @end

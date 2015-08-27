@@ -7,6 +7,10 @@
 //
 
 #import "SingleObject.h"
+#import "Utility.h"
+#import "MacroDefinitions.h"
+
+#define LOG_FILE_NAME @"logFile.txt"
 
 @implementation SingleObject
 
@@ -17,6 +21,28 @@
         _sharedClient = [[SingleObject alloc] init];
     });
     return _sharedClient;
+}
+
+- (BOOL)logUserAction:(NSString *)action{
+    LOG(action);
+    if (!action || !action.length) return NO;
+    NSString *filePath = [Utility getFilePathWithName:LOG_FILE_NAME];
+    if (filePath) {
+        NSString *string = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        if (!string)  string = @"";
+        string = [string stringByAppendingFormat:@"%@\n",action];
+        return [string writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    }
+    return NO;
+}
+
+- (NSString *)userActions{
+    NSString *filePath = [Utility getFilePathWithName:LOG_FILE_NAME];
+    return [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+}
+- (BOOL)emptyUserActions{
+    NSString *filePath = [Utility getFilePathWithName:LOG_FILE_NAME];
+    return [@"" writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 
 @end

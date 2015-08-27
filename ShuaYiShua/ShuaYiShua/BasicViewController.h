@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 #import "UIView+Additional.h"
 #import "NSArray+Additional.h"
 #import "NSDictionary+Additional.h"
@@ -14,7 +15,11 @@
 #import "UIImage+Additional.h"
 #import "MacroDefinitions.h"
 #import "SingleObject.h"
+#import "LoginViewController.h"
 
 @interface BasicViewController : UIViewController
+
+-(void)setupAD;
+-(void)showLoginAnimated:(BOOL)animated fromRootViewController:(BOOL)isFrom;
 
 @end

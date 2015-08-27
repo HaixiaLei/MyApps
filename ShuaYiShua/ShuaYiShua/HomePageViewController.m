@@ -7,7 +7,6 @@
 //
 
 #import "HomePageViewController.h"
-#import <iAd/iAd.h>
 
 @interface HomePageViewController ()
 
@@ -17,10 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor lightGrayColor]];
 
-    ADBannerView *bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 50, [UIScreen mainScreen].bounds.size.width, 50)];
-    [self.view addSubview:bannerView];
+    if (![SingleObject shared].isLogin) {
+        [self showLoginAnimated:NO fromRootViewController:NO];
+    }else{
+        
+    }
+    
+    
+    
+    
+    [self setupAD];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,4 +47,9 @@
 }
 */
 
+- (IBAction)sfdsfbbbbb:(id)sender {
+}
+
+- (IBAction)sdfsdfsdf:(id)sender {
+}
 @end
