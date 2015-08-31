@@ -15,6 +15,9 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qXN-4w-O60">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMF-9z-Dic">
                     <rect key="frame" x="52" y="145" width="216" height="70"/>
                     <constraints>
@@ -25,10 +28,11 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0u-Jv-1HJ">
-                    <rect key="frame" x="249" y="496" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0u-Jv-1HJ">
+                    <rect key="frame" x="214" y="496" width="65" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="46" id="GCs-g0-HGp"/>
+                        <constraint firstAttribute="width" constant="65" id="GCs-g0-HGp"/>
                         <constraint firstAttribute="height" constant="30" id="LSN-hH-ZsF"/>
                     </constraints>
                     <state key="normal" title="GO">
@@ -41,15 +45,22 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="qXN-4w-O60" secondAttribute="trailing" id="5af-DB-ERu"/>
+                <constraint firstItem="qXN-4w-O60" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kof-yo-qEJ"/>
+                <constraint firstItem="qXN-4w-O60" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U79-Ix-NSz"/>
                 <constraint firstAttribute="trailing" secondItem="H0u-Jv-1HJ" secondAttribute="trailing" constant="41" id="Yhl-qa-gE4"/>
                 <constraint firstItem="yMF-9z-Dic" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="145" id="c1G-g8-LVY"/>
                 <constraint firstItem="yMF-9z-Dic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="52" id="q9s-Cp-9bx"/>
+                <constraint firstAttribute="bottom" secondItem="qXN-4w-O60" secondAttribute="bottom" id="r3B-gq-eLw"/>
                 <constraint firstAttribute="bottom" secondItem="H0u-Jv-1HJ" secondAttribute="bottom" constant="42" id="rRm-zG-vgt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="245" y="317"/>
         </view>
     </objects>
+    <resources>
+        <image name="11.jpg" width="440" height="660"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

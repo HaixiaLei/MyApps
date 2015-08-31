@@ -20,6 +20,6 @@
 @interface BasicViewController : UIViewController
 
 -(void)setupAD;
--(void)showLoginAnimated:(BOOL)animated fromRootViewController:(BOOL)isFrom;
+-(void)showLoginAnimated:(BOOL)animated;
 
 @end

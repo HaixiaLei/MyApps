@@ -18,16 +18,19 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
 
-    if (![SingleObject shared].isLogin) {
-        [self showLoginAnimated:NO fromRootViewController:NO];
-    }else{
-        
-    }
-    
+
     
     
     
     [self setupAD];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    if (![SingleObject shared].isLogin) {
+        [self showLoginAnimated:NO];
+    }else{
+        
+    }
 }
 
 

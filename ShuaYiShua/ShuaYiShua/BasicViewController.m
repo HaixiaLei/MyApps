@@ -25,19 +25,19 @@
     [self.view addSubview:bannerView];
 }
 
--(void)showLoginAnimated:(BOOL)animated fromRootViewController:(BOOL)isFrom{
+-(void)showLoginAnimated:(BOOL)animated{
     LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
     LoginViewController *login = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
-    UINavigationController *navigationLogin = [[UINavigationController alloc]initWithRootViewController:login];
     
-    //苹果推荐用根视图控制器去present另一个视图控制器，否则提示Presenting view controllers on detached view controllers is discouraged但是为了介绍页满满消散的效果
-    UIViewController *controller;
-    if (isFrom) {
-        controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-    }else{
-        controller = self;
+    if (animated) {
+        CATransition* transition = [CATransition animation];
+        transition.duration = 0.5;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        transition.type = kCATransitionMoveIn;
+        transition.subtype = kCATransitionFromBottom;
+        [self.navigationController.view.layer addAnimation:transition forKey:nil];
     }
-    [controller presentViewController:navigationLogin animated:animated completion:nil];
+    [self.navigationController pushViewController:login animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

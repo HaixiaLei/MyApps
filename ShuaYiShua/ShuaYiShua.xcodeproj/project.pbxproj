@@ -34,6 +34,7 @@
 		957F844D1B8D624800C0A7A7 /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F844C1B8D624800C0A7A7 /* AppClient.m */; };
 		959784B11B8EBFF200992114 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959784AF1B8EBFF200992114 /* LoginViewController.m */; };
 		959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959784B01B8EBFF200992114 /* LoginViewController.xib */; };
+		95FAA3111B94301400C5A8CD /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95FAA3101B94301400C5A8CD /* 11.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		959784AE1B8EBFF200992114 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		959784AF1B8EBFF200992114 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		959784B01B8EBFF200992114 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		95FAA3101B94301400C5A8CD /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		C2EDC97B2D8EAF189C4649A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -288,6 +290,7 @@
 				956ACD611B8C62F40006AD48 /* IntroduceViewController.h */,
 				956ACD621B8C62F40006AD48 /* IntroduceViewController.m */,
 				956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */,
+				95FAA3101B94301400C5A8CD /* 11.jpg */,
 			);
 			name = IntroducePage;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */,
 				956ACD651B8C62F40006AD48 /* IntroduceViewController.xib in Resources */,
 				956ACCD21B8C2F920006AD48 /* Main.storyboard in Resources */,
+				95FAA3111B94301400C5A8CD /* 11.jpg in Resources */,
 				956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */,
 				956ACCD41B8C2F920006AD48 /* Images.xcassets in Resources */,
 			);

@@ -36,7 +36,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *stringDate = [dateFormatter stringFromDate:date];
-    stringDate = [NSString stringWithFormat:@"\n****** %@ ******",stringDate];
+    stringDate = [NSString stringWithFormat:@"\n****** Launch:%@ ******",stringDate];
     [[SingleObject shared]logUserAction:stringDate];
     return YES;
 }

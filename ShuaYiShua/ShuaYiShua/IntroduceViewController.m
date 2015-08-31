@@ -38,21 +38,16 @@
     if ([obj isKindOfClass:[ViewController class]]) {
         ViewController *viewc = (ViewController *)obj;
         viewc.homePageNavigationController = [[UINavigationController alloc]initWithRootViewController:home];
-        [self.view.superview addSubview:viewc.homePageNavigationController.view];
+        viewc.homePageNavigationController.navigationBarHidden = YES;
+        [self.view.superview insertSubview:viewc.homePageNavigationController.view belowSubview:self.view];
     }
-    
-    
-    
-    //动画，让介绍页满满消失
-    CATransition *animation = [CATransition animation];
-    animation.type = kCATransitionFade;
-    [animation setDuration:0.4];
-    [animation setDelegate:self];
-    animation.removedOnCompletion = YES;
-    [self.view.superview.layer addAnimation:animation forKey:@"fade"];
+
+    [UIView animateWithDuration:0.5 animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(-self.view.width, 0);
+        self.view.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self.view removeFromSuperview];
+    }];
 }
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
-    [self.view removeFromSuperview];//动画结束后，移除介绍页
-}
 @end
