@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *tttee;
 - (IBAction)sfdsfbbbbb:(id)sender;
 - (IBAction)sdfsdfsdf:(id)sender;
+- (IBAction)loginAction:(UIButton *)sender;
 @end

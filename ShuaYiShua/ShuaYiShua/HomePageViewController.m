@@ -55,4 +55,8 @@
 
 - (IBAction)sdfsdfsdf:(id)sender {
 }
+
+- (IBAction)loginAction:(UIButton *)sender {
+    [self showLoginAnimated:YES];
+}
 @end

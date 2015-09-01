@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SingleObject.h"
 
 @interface MacroDefinitions : NSObject
 
@@ -25,7 +26,8 @@
 #define LOG(...) NSLog(__VA_ARGS__);
 #define LOG_METHOD NSLog(@"%s", __func__);
 #else
-#define LOG(...); #define LOG_METHOD;
+#define LOG(...); 
+#define LOG_METHOD;
 #endif
 
 /**

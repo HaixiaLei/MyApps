@@ -38,7 +38,9 @@
 
 - (NSString *)userActions{
     NSString *filePath = [Utility getFilePathWithName:LOG_FILE_NAME];
-    return [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSString *action = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    action = [NSString stringWithFormat:@"\n\n\n******************************************************\n******************** User Actions ********************\n******************************************************\n%@\n******************************************************\n******************** User Actions ********************\n******************************************************\n\n\n\n",action];
+    return action;
 }
 - (BOOL)emptyUserActions{
     NSString *filePath = [Utility getFilePathWithName:LOG_FILE_NAME];

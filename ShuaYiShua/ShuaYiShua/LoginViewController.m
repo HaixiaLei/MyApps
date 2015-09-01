@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "MacroDefinitions.h"
+#import "SingleObject.h"
 
 @interface LoginViewController ()
 
@@ -36,12 +37,13 @@
 */
 
 - (IBAction)login:(UIButton *)sender {
-    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+     [[SingleObject shared]logUserAction:[NSString stringWithFormat:@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd)]];
+    [SingleObject shared].isLogin = YES;
     CATransition* transition = [CATransition animation];
-    transition.duration = 0.5;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     transition.type = kCATransitionReveal;
-    transition.subtype = kCATransitionFromTop;
+    transition.subtype = kCATransitionFromBottom;
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [self.navigationController popViewControllerAnimated:NO];
 }

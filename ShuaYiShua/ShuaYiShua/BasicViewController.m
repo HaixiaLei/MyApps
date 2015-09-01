@@ -15,26 +15,26 @@
 @implementation BasicViewController
 
 - (void)viewDidLoad {
-    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+    [[SingleObject shared]logUserAction:[NSString stringWithFormat:@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd)]];
     [super viewDidLoad];
 }
 
 -(void)setupAD{
-    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+     [[SingleObject shared]logUserAction:[NSString stringWithFormat:@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd)]];
     ADBannerView *bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 50, [UIScreen mainScreen].bounds.size.width, 50)];
     [self.view addSubview:bannerView];
 }
 
 -(void)showLoginAnimated:(BOOL)animated{
-    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+     [[SingleObject shared]logUserAction:[NSString stringWithFormat:@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd)]];
     LoginViewController *login = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
     
     if (animated) {
         CATransition* transition = [CATransition animation];
-        transition.duration = 0.5;
-        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        transition.duration = 0.3;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
         transition.type = kCATransitionMoveIn;
-        transition.subtype = kCATransitionFromBottom;
+        transition.subtype = kCATransitionFromTop;
         [self.navigationController.view.layer addAnimation:transition forKey:nil];
     }
     [self.navigationController pushViewController:login animated:NO];

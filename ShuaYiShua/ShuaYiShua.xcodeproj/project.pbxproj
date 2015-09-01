@@ -29,12 +29,15 @@
 		956ACD5F1B8C5EAD0006AD48 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD5D1B8C5EAD0006AD48 /* HomePageViewController.m */; };
 		956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956ACD5E1B8C5EAD0006AD48 /* HomePageViewController.xib */; };
 		956ACD641B8C62F40006AD48 /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD621B8C62F40006AD48 /* IntroduceViewController.m */; };
-		956ACD651B8C62F40006AD48 /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */; };
 		957F84491B8D579E00C0A7A7 /* AppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F84481B8D579E00C0A7A7 /* AppRequest.m */; };
 		957F844D1B8D624800C0A7A7 /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F844C1B8D624800C0A7A7 /* AppClient.m */; };
 		959784B11B8EBFF200992114 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959784AF1B8EBFF200992114 /* LoginViewController.m */; };
 		959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959784B01B8EBFF200992114 /* LoginViewController.xib */; };
 		95FAA3111B94301400C5A8CD /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95FAA3101B94301400C5A8CD /* 11.jpg */; };
+		95FAA3141B944AE800C5A8CD /* AccelaUniversalDoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FAA3131B944AE800C5A8CD /* AccelaUniversalDoneButton.m */; };
+		95FAA31A1B944D2100C5A8CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95FAA31C1B944D2100C5A8CD /* Localizable.strings */; };
+		95FAA3211B944F9600C5A8CD /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95FAA3231B944F9600C5A8CD /* IntroduceViewController.xib */; };
+		95FAA3281B94503200C5A8CD /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FAA3271B94503200C5A8CD /* NJDBezierCurve.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,6 @@
 		956ACCCB1B8C2F920006AD48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		956ACCCD1B8C2F920006AD48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		956ACCCE1B8C2F920006AD48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		956ACCD11B8C2F920006AD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		956ACCD31B8C2F920006AD48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		956ACCDC1B8C2F920006AD48 /* ShuaYiShuaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuaYiShuaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		956ACCE11B8C2F920006AD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +94,6 @@
 		956ACD5E1B8C5EAD0006AD48 /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		956ACD611B8C62F40006AD48 /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
 		956ACD621B8C62F40006AD48 /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
-		956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroduceViewController.xib; sourceTree = "<group>"; };
 		957F84471B8D579E00C0A7A7 /* AppRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest.h; sourceTree = "<group>"; };
 		957F84481B8D579E00C0A7A7 /* AppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRequest.m; sourceTree = "<group>"; };
 		957F844B1B8D624800C0A7A7 /* AppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppClient.h; sourceTree = "<group>"; };
@@ -101,6 +102,15 @@
 		959784AF1B8EBFF200992114 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		959784B01B8EBFF200992114 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		95FAA3101B94301400C5A8CD /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		95FAA3121B944AE800C5A8CD /* AccelaUniversalDoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelaUniversalDoneButton.h; sourceTree = "<group>"; };
+		95FAA3131B944AE800C5A8CD /* AccelaUniversalDoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelaUniversalDoneButton.m; sourceTree = "<group>"; };
+		95FAA31B1B944D2100C5A8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		95FAA31E1B944D6300C5A8CD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		95FAA31F1B944D8E00C5A8CD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		95FAA3201B944D8F00C5A8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95FAA3221B944F9600C5A8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IntroduceViewController.xib; sourceTree = "<group>"; };
+		95FAA3261B94503200C5A8CD /* NJDBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJDBezierCurve.h; sourceTree = "<group>"; };
+		95FAA3271B94503200C5A8CD /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
 		C2EDC97B2D8EAF189C4649A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -185,6 +195,7 @@
 			children = (
 				956ACCC71B8C2F920006AD48 /* Info.plist */,
 				956ACCC81B8C2F920006AD48 /* main.m */,
+				95FAA31C1B944D2100C5A8CD /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +273,8 @@
 		956ACD541B8C583C0006AD48 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				95FAA3291B94503C00C5A8CD /* NJDBezierCurve */,
+				95FAA3171B944BF900C5A8CD /* AccelaUniversalDoneButton */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -289,10 +302,28 @@
 			children = (
 				956ACD611B8C62F40006AD48 /* IntroduceViewController.h */,
 				956ACD621B8C62F40006AD48 /* IntroduceViewController.m */,
-				956ACD631B8C62F40006AD48 /* IntroduceViewController.xib */,
+				95FAA3231B944F9600C5A8CD /* IntroduceViewController.xib */,
 				95FAA3101B94301400C5A8CD /* 11.jpg */,
 			);
 			name = IntroducePage;
+			sourceTree = "<group>";
+		};
+		95FAA3171B944BF900C5A8CD /* AccelaUniversalDoneButton */ = {
+			isa = PBXGroup;
+			children = (
+				95FAA3121B944AE800C5A8CD /* AccelaUniversalDoneButton.h */,
+				95FAA3131B944AE800C5A8CD /* AccelaUniversalDoneButton.m */,
+			);
+			name = AccelaUniversalDoneButton;
+			sourceTree = "<group>";
+		};
+		95FAA3291B94503C00C5A8CD /* NJDBezierCurve */ = {
+			isa = PBXGroup;
+			children = (
+				95FAA3261B94503200C5A8CD /* NJDBezierCurve.h */,
+				95FAA3271B94503200C5A8CD /* NJDBezierCurve.m */,
+			);
+			name = NJDBezierCurve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +391,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 956ACCBA1B8C2F920006AD48;
 			productRefGroup = 956ACCC41B8C2F920006AD48 /* Products */;
@@ -378,8 +410,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				959784B21B8EBFF200992114 /* LoginViewController.xib in Resources */,
-				956ACD651B8C62F40006AD48 /* IntroduceViewController.xib in Resources */,
+				95FAA3211B944F9600C5A8CD /* IntroduceViewController.xib in Resources */,
 				956ACCD21B8C2F920006AD48 /* Main.storyboard in Resources */,
+				95FAA31A1B944D2100C5A8CD /* Localizable.strings in Resources */,
 				95FAA3111B94301400C5A8CD /* 11.jpg in Resources */,
 				956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */,
 				956ACCD41B8C2F920006AD48 /* Images.xcassets in Resources */,
@@ -450,8 +483,10 @@
 				956ACD4E1B8C57EF0006AD48 /* UIImage+ImageEffects.m in Sources */,
 				956ACD641B8C62F40006AD48 /* IntroduceViewController.m in Sources */,
 				956ACD461B8C57EF0006AD48 /* BasicViewController.m in Sources */,
+				95FAA3281B94503200C5A8CD /* NJDBezierCurve.m in Sources */,
 				956ACCCC1B8C2F920006AD48 /* AppDelegate.m in Sources */,
 				956ACD5B1B8C5D1A0006AD48 /* SingleObject.m in Sources */,
+				95FAA3141B944AE800C5A8CD /* AccelaUniversalDoneButton.m in Sources */,
 				956ACCC91B8C2F920006AD48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,9 +513,27 @@
 		956ACCD01B8C2F920006AD48 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				956ACCD11B8C2F920006AD48 /* Base */,
+				95FAA31F1B944D8E00C5A8CD /* zh-Hans */,
+				95FAA3201B944D8F00C5A8CD /* en */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95FAA31C1B944D2100C5A8CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95FAA31B1B944D2100C5A8CD /* en */,
+				95FAA31E1B944D6300C5A8CD /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		95FAA3231B944F9600C5A8CD /* IntroduceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95FAA3221B944F9600C5A8CD /* en */,
+			);
+			name = IntroduceViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

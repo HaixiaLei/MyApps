@@ -26,32 +26,25 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQV-zk-aoc">
-                    <rect key="frame" x="83" y="237" width="46" height="30"/>
-                    <state key="normal" title="Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQV-zk-aoc">
+                    <rect key="frame" x="257" y="43" width="38" height="30"/>
+                    <state key="normal" title="Login">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Dwx-y2-3W3"/>
                         <action selector="sfdsfbbbbb:" destination="-1" eventType="touchUpInside" id="xJq-FV-HaS"/>
                     </connections>
                 </button>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G85-Ey-IRB">
-                    <rect key="frame" x="27" y="341" width="123" height="29"/>
-                    <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
-                    </segments>
-                    <connections>
-                        <action selector="sdfsdfsdf:" destination="-1" eventType="valueChanged" id="lrP-kv-z35"/>
-                    </connections>
-                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="PSf-up-uRG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="MGB-vm-oaO"/>
+                <constraint firstItem="CQV-zk-aoc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="43" id="MnL-uu-gFn"/>
+                <constraint firstAttribute="trailing" secondItem="CQV-zk-aoc" secondAttribute="trailing" constant="25" id="rwR-T7-HZR"/>
                 <constraint firstItem="PSf-up-uRG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="sB0-Cc-gXD"/>
             </constraints>
-            <point key="canvasLocation" x="340" y="433"/>
+            <point key="canvasLocation" x="492" y="418"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NJDBezierCurve.h"
 
 @interface UIView (Additional)
 
@@ -64,4 +65,35 @@
  */
 -(void)resignKeyBoard;
 
+/**
+ *  用贝塞尔曲线设置view走位
+ */
+-(void)setFrame:(CGRect)frame withBezier:(Point2D *)fBezier curveWithBezier:(Point2D *)cBezier isHorizon:(BOOL)horizon timeInterval:(NSTimeInterval)interval;
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

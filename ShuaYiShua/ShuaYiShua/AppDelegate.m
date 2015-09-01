@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SingleObject.h"
+#import "MacroDefinitions.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,7 @@
 
 void uncaughtExceptionHandler(NSException *exception) {
     [SingleObject shared].isLastLaunchCrashed = YES;
-    NSMutableString *exceptionString = [NSMutableString stringWithFormat:@"\n!!! EXCEPTION !!!"];
+    NSMutableString *exceptionString = [NSMutableString stringWithFormat:@"\n!!!!! EXCEPTION !!!!!"];
     [exceptionString appendFormat:@"\nname:%@",exception.name];
     [exceptionString appendFormat:@"\nreason:%@",exception.reason];
     [exceptionString appendFormat:@"\nuserInfo:%@",exception.userInfo];
@@ -30,7 +31,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [SingleObject shared].isLastLaunchCrashed = NO;
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    NSLog(@"%@",[[SingleObject shared]userActions]);
+    LOG(@"%@",[[SingleObject shared]userActions]);
     
     NSDate *date = [NSDate date];
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];

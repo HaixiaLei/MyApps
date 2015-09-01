@@ -231,4 +231,80 @@
     }
 }
 
+//贝塞尔曲线 http://cubic-bezier.com/#.35,-0.22,.29,1.2
+-(void)setFrame:(CGRect)frame withBezier:(Point2D *)fBezier curveWithBezier:(Point2D *)cBezier isHorizon:(BOOL)horizon timeInterval:(NSTimeInterval)interval{
+    if (!fBezier) return;
+    float dt;
+    dt = 1.0 / (120 - 1);
+    for (int i = 0; i < 120; i++) {
+        Point2D point = PointOnCubicBezier(fBezier, i*dt);
+        NSLog(@"X=%f,,,Y=%f",point.x,point.y);
+        float durationTime = point.x * interval;
+        CGRect newFrame;
+        newFrame.origin.x = point.y*(frame.origin.x-self.left) + self.left;
+        newFrame.origin.y = point.y*(frame.origin.y-self.top) + self.top;
+        newFrame.size.width = point.y*(frame.size.width-self.width) + self.width;
+        newFrame.size.height = point.y*(frame.size.height-self.height) + self.height;
+        
+        if (cBezier) {
+            if (fBezier != cBezier) {
+                point = PointOnCubicBezier(cBezier, i*dt);
+            }
+            if (horizon) {
+                newFrame.origin.x = point.x*(frame.origin.x-self.left) + self.left;
+            }else{
+                newFrame.origin.y = point.x*(frame.origin.y-self.top) + self.top;
+            }
+        }
+        [self performSelector:@selector(moveTo:) withObject:[NSValue valueWithCGRect:newFrame] afterDelay:durationTime];
+    }
+}
+
+-(void)moveTo:(NSValue *)value{
+    CGRect rect = value.CGRectValue;
+    [self setFrame:rect];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

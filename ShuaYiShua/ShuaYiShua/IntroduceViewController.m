@@ -10,7 +10,9 @@
 #import "HomePageViewController.h"
 #import "ViewController.h"
 
-@interface IntroduceViewController ()
+@interface IntroduceViewController (){
+    UILabel *blank;
+}
 
 @end
 
@@ -19,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor purpleColor]];
+    
+    blank = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    blank.backgroundColor = [UIColor redColor];
+    [self.view addSubview:blank];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +37,7 @@
 }
 
 - (IBAction)go:(id)sender {
-    LOG(@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+     [[SingleObject shared]logUserAction:[NSString stringWithFormat:@"%@触发方法：%@",NSStringFromClass([self class]),NSStringFromSelector(_cmd)]];
     HomePageViewController *home = [[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     
     id obj = [UIApplication sharedApplication].keyWindow.rootViewController;
@@ -48,6 +54,23 @@
     } completion:^(BOOL finished) {
         [self.view removeFromSuperview];
     }];
+   
+//    //测试
+//    [blank setFrame:CGRectMake(100, 100, 100, 100)];
+//    Point2D start;
+//    Point2D end;
+//    Point2D control1;
+//    Point2D control2;
+//    start.x = 0.0;
+//    start.y = 0.0;
+//    end.x = 1.0;
+//    end.y = 1.0;
+//    control1.x = 0.75;
+//    control1.y = 0.0;
+//    control2.x = 1.0;
+//    control2.y = 1.0;
+//    Point2D p[4] = {start,control1,control2,end};
+//    [blank setFrame:CGRectMake(250, 500, 50, 20) withBezier:p curveWithBezier:p isHorizon:NO timeInterval:.5];
 }
 
 @end
