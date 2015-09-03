@@ -44,7 +44,7 @@
     if ([obj isKindOfClass:[ViewController class]]) {
         ViewController *viewc = (ViewController *)obj;
         viewc.homePageNavigationController = [[UINavigationController alloc]initWithRootViewController:home];
-        viewc.homePageNavigationController.navigationBarHidden = YES;
+//        viewc.homePageNavigationController.navigationBarHidden = YES;
         [self.view.superview insertSubview:viewc.homePageNavigationController.view belowSubview:self.view];
     }
 

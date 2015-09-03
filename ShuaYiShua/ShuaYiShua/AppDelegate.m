@@ -29,6 +29,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [[[UIApplication sharedApplication] keyWindow] setBackgroundColor:[UIColor blackColor]];
     [SingleObject shared].isLastLaunchCrashed = NO;
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     LOG(@"%@",[[SingleObject shared]userActions]);

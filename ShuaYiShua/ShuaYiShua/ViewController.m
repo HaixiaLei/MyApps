@@ -26,7 +26,7 @@
     if ([versionBuild_now isEqualToString:versionBuild_old] && ![SingleObject shared].isIntroduceForcedToShow) {
         HomePageViewController *homePage = [[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
         self.homePageNavigationController = [[UINavigationController alloc]initWithRootViewController:homePage];
-        self.homePageNavigationController.navigationBarHidden = YES;
+//        self.homePageNavigationController.navigationBarHidden = YES;
         [self.view addSubview:self.homePageNavigationController.view];
     }else{
         self.introduceViewController = [[IntroduceViewController alloc]initWithNibName:@"IntroduceViewController" bundle:nil];

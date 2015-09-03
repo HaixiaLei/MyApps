@@ -259,11 +259,18 @@
         [self performSelector:@selector(moveTo:) withObject:[NSValue valueWithCGRect:newFrame] afterDelay:durationTime];
     }
 }
-
 -(void)moveTo:(NSValue *)value{
     CGRect rect = value.CGRectValue;
     [self setFrame:rect];
 }
+
+//-(void)setRoundingCorner:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii borderColor:(UIColor *)color borderWidth:(float)width{
+//    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:cornerRadii];
+//    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+//    maskLayer.frame = self.bounds;
+//    maskLayer.path = maskPath.CGPath;
+//    self.layer.mask = maskLayer;
+//}
 
 @end
 
