@@ -13,7 +13,6 @@
 		956ACCCF1B8C2F920006AD48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACCCE1B8C2F920006AD48 /* ViewController.m */; };
 		956ACCD21B8C2F920006AD48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956ACCD01B8C2F920006AD48 /* Main.storyboard */; };
 		956ACCD41B8C2F920006AD48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956ACCD31B8C2F920006AD48 /* Images.xcassets */; };
-		956ACCE31B8C2F920006AD48 /* ShuaYiShuaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACCE21B8C2F920006AD48 /* ShuaYiShuaTests.m */; };
 		956ACD461B8C57EF0006AD48 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD301B8C57EF0006AD48 /* BasicViewController.m */; };
 		956ACD471B8C57EF0006AD48 /* NSArray+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD331B8C57EF0006AD48 /* NSArray+Additional.m */; };
 		956ACD481B8C57EF0006AD48 /* NSDate+Translate.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD351B8C57EF0006AD48 /* NSDate+Translate.m */; };
@@ -29,6 +28,7 @@
 		956ACD5F1B8C5EAD0006AD48 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD5D1B8C5EAD0006AD48 /* HomePageViewController.m */; };
 		956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956ACD5E1B8C5EAD0006AD48 /* HomePageViewController.xib */; };
 		956ACD641B8C62F40006AD48 /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ACD621B8C62F40006AD48 /* IntroduceViewController.m */; };
+		956ED5B11B99697B003A1A5C /* NSTimer+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 956ED5B01B99697B003A1A5C /* NSTimer+Additional.m */; };
 		957F84491B8D579E00C0A7A7 /* AppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F84481B8D579E00C0A7A7 /* AppRequest.m */; };
 		957F844D1B8D624800C0A7A7 /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 957F844C1B8D624800C0A7A7 /* AppClient.m */; };
 		959784B11B8EBFF200992114 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959784AF1B8EBFF200992114 /* LoginViewController.m */; };
@@ -41,16 +41,6 @@
 		95FAA3281B94503200C5A8CD /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FAA3271B94503200C5A8CD /* NJDBezierCurve.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		956ACCDD1B8C2F920006AD48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 956ACCBB1B8C2F920006AD48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 956ACCC21B8C2F920006AD48;
-			remoteInfo = ShuaYiShua;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		31625999CFD9316A3B86DA59 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		83C5DB3C02917F6CDF0BCFCA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +52,6 @@
 		956ACCCD1B8C2F920006AD48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		956ACCCE1B8C2F920006AD48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		956ACCD31B8C2F920006AD48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		956ACCDC1B8C2F920006AD48 /* ShuaYiShuaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuaYiShuaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		956ACCE11B8C2F920006AD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		956ACCE21B8C2F920006AD48 /* ShuaYiShuaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShuaYiShuaTests.m; sourceTree = "<group>"; };
 		956ACD2F1B8C57EF0006AD48 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -95,6 +84,8 @@
 		956ACD5E1B8C5EAD0006AD48 /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		956ACD611B8C62F40006AD48 /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
 		956ACD621B8C62F40006AD48 /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
+		956ED5AF1B99697B003A1A5C /* NSTimer+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Additional.h"; sourceTree = "<group>"; };
+		956ED5B01B99697B003A1A5C /* NSTimer+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Additional.m"; sourceTree = "<group>"; };
 		957F84471B8D579E00C0A7A7 /* AppRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest.h; sourceTree = "<group>"; };
 		957F84481B8D579E00C0A7A7 /* AppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRequest.m; sourceTree = "<group>"; };
 		957F844B1B8D624800C0A7A7 /* AppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppClient.h; sourceTree = "<group>"; };
@@ -114,19 +105,6 @@
 		95FAA3221B944F9600C5A8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IntroduceViewController.xib; sourceTree = "<group>"; };
 		95FAA3261B94503200C5A8CD /* NJDBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJDBezierCurve.h; sourceTree = "<group>"; };
 		95FAA3271B94503200C5A8CD /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
-		95FAA35E1B95771E00C5A8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95FAA35F1B95771E00C5A8CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		95FAA3611B95771E00C5A8CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		95FAA3621B95771E00C5A8CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		95FAA3641B95771E00C5A8CD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		95FAA3651B95771E00C5A8CD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		95FAA3671B95771E00C5A8CD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		95FAA3681B95771E00C5A8CD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		95FAA36B1B95771E00C5A8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		95FAA36D1B95771E00C5A8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		95FAA3701B95771E00C5A8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		95FAA37B1B95771F00C5A8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95FAA37C1B95771F00C5A8CD /* rrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rrTests.m; sourceTree = "<group>"; };
 		C2EDC97B2D8EAF189C4649A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,13 +114,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1374182B237C915DCEB0BD0F /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		956ACCD91B8C2F920006AD48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +142,6 @@
 			children = (
 				956ACCC51B8C2F920006AD48 /* ShuaYiShua */,
 				956ACCDF1B8C2F920006AD48 /* ShuaYiShuaTests */,
-				95FAA35C1B95771E00C5A8CD /* rr */,
-				95FAA3791B95771F00C5A8CD /* rrTests */,
 				956ACCC41B8C2F920006AD48 /* Products */,
 				497F216C3DD98F0B0C848973 /* Pods */,
 				4CA8DF0E0A34FD02EF79BF70 /* Frameworks */,
@@ -183,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				956ACCC31B8C2F920006AD48 /* ShuaYiShua.app */,
-				956ACCDC1B8C2F920006AD48 /* ShuaYiShuaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +254,8 @@
 				956ACD431B8C57EF0006AD48 /* UIView+Additional.m */,
 				95AB78191B958533008BE295 /* NSMutableAttributedString+Additional.h */,
 				95AB781A1B958533008BE295 /* NSMutableAttributedString+Additional.m */,
+				956ED5AF1B99697B003A1A5C /* NSTimer+Additional.h */,
+				956ED5B01B99697B003A1A5C /* NSTimer+Additional.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -346,49 +316,6 @@
 			name = NJDBezierCurve;
 			sourceTree = "<group>";
 		};
-		95FAA35C1B95771E00C5A8CD /* rr */ = {
-			isa = PBXGroup;
-			children = (
-				95FAA3611B95771E00C5A8CD /* AppDelegate.h */,
-				95FAA3621B95771E00C5A8CD /* AppDelegate.m */,
-				95FAA3641B95771E00C5A8CD /* MasterViewController.h */,
-				95FAA3651B95771E00C5A8CD /* MasterViewController.m */,
-				95FAA3671B95771E00C5A8CD /* DetailViewController.h */,
-				95FAA3681B95771E00C5A8CD /* DetailViewController.m */,
-				95FAA36A1B95771E00C5A8CD /* Main.storyboard */,
-				95FAA36D1B95771E00C5A8CD /* Images.xcassets */,
-				95FAA36F1B95771E00C5A8CD /* LaunchScreen.xib */,
-				95FAA35D1B95771E00C5A8CD /* Supporting Files */,
-			);
-			path = rr;
-			sourceTree = "<group>";
-		};
-		95FAA35D1B95771E00C5A8CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				95FAA35E1B95771E00C5A8CD /* Info.plist */,
-				95FAA35F1B95771E00C5A8CD /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		95FAA3791B95771F00C5A8CD /* rrTests */ = {
-			isa = PBXGroup;
-			children = (
-				95FAA37C1B95771F00C5A8CD /* rrTests.m */,
-				95FAA37A1B95771F00C5A8CD /* Supporting Files */,
-			);
-			path = rrTests;
-			sourceTree = "<group>";
-		};
-		95FAA37A1B95771F00C5A8CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				95FAA37B1B95771F00C5A8CD /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,24 +338,6 @@
 			productReference = 956ACCC31B8C2F920006AD48 /* ShuaYiShua.app */;
 			productType = "com.apple.product-type.application";
 		};
-		956ACCDB1B8C2F920006AD48 /* ShuaYiShuaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 956ACCE91B8C2F920006AD48 /* Build configuration list for PBXNativeTarget "ShuaYiShuaTests" */;
-			buildPhases = (
-				956ACCD81B8C2F920006AD48 /* Sources */,
-				956ACCD91B8C2F920006AD48 /* Frameworks */,
-				956ACCDA1B8C2F920006AD48 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				956ACCDE1B8C2F920006AD48 /* PBXTargetDependency */,
-			);
-			name = ShuaYiShuaTests;
-			productName = ShuaYiShuaTests;
-			productReference = 956ACCDC1B8C2F920006AD48 /* ShuaYiShuaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -440,10 +349,6 @@
 				TargetAttributes = {
 					956ACCC21B8C2F920006AD48 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					956ACCDB1B8C2F920006AD48 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 956ACCC21B8C2F920006AD48;
 					};
 				};
 			};
@@ -462,7 +367,6 @@
 			projectRoot = "";
 			targets = (
 				956ACCC21B8C2F920006AD48 /* ShuaYiShua */,
-				956ACCDB1B8C2F920006AD48 /* ShuaYiShuaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -479,13 +383,6 @@
 				95FAA3111B94301400C5A8CD /* 11.jpg in Resources */,
 				956ACD601B8C5EAD0006AD48 /* HomePageViewController.xib in Resources */,
 				956ACCD41B8C2F920006AD48 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		956ACCDA1B8C2F920006AD48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +439,7 @@
 				956ACD5F1B8C5EAD0006AD48 /* HomePageViewController.m in Sources */,
 				956ACD4A1B8C57EF0006AD48 /* NSString+Additional.m in Sources */,
 				956ACD4D1B8C57EF0006AD48 /* UIImage+Alpha.m in Sources */,
+				956ED5B11B99697B003A1A5C /* NSTimer+Additional.m in Sources */,
 				957F84491B8D579E00C0A7A7 /* AppRequest.m in Sources */,
 				956ACD4E1B8C57EF0006AD48 /* UIImage+ImageEffects.m in Sources */,
 				95AB781B1B958533008BE295 /* NSMutableAttributedString+Additional.m in Sources */,
@@ -555,23 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		956ACCD81B8C2F920006AD48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				956ACCE31B8C2F920006AD48 /* ShuaYiShuaTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		956ACCDE1B8C2F920006AD48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 956ACCC21B8C2F920006AD48 /* ShuaYiShua */;
-			targetProxy = 956ACCDD1B8C2F920006AD48 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		956ACCD01B8C2F920006AD48 /* Main.storyboard */ = {
@@ -598,22 +480,6 @@
 				95FAA3221B944F9600C5A8CD /* en */,
 			);
 			name = IntroduceViewController.xib;
-			sourceTree = "<group>";
-		};
-		95FAA36A1B95771E00C5A8CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95FAA36B1B95771E00C5A8CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		95FAA36F1B95771E00C5A8CD /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95FAA3701B95771E00C5A8CD /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -721,40 +587,6 @@
 			};
 			name = Release;
 		};
-		956ACCEA1B8C2F920006AD48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ShuaYiShuaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShuaYiShua.app/ShuaYiShua";
-			};
-			name = Debug;
-		};
-		956ACCEB1B8C2F920006AD48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ShuaYiShuaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShuaYiShua.app/ShuaYiShua";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -772,15 +604,6 @@
 			buildConfigurations = (
 				956ACCE71B8C2F920006AD48 /* Debug */,
 				956ACCE81B8C2F920006AD48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		956ACCE91B8C2F920006AD48 /* Build configuration list for PBXNativeTarget "ShuaYiShuaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				956ACCEA1B8C2F920006AD48 /* Debug */,
-				956ACCEB1B8C2F920006AD48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
